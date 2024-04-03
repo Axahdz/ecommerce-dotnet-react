@@ -1,38 +1,73 @@
+/* Estilos para el componente principal App. */
 .App {
-  text-align: center;
+  text-align: center; /* Centra el texto. */
+  background-color: #f7f7f7; /* Establece un color de fondo claro para la aplicación. */
+  min-height: 100vh; /* Asegura que la App tenga al menos el alto de la ventana del navegador. */
+  display: flex; /* Utiliza Flexbox para alinear los elementos hijos. */
+  flex-direction: column; /* Los elementos hijos se organizan en columna. */
+  align-items: center; /* Centra los elementos hijos horizontalmente. */
+  justify-content: center; /* Centra los elementos hijos verticalmente. */
+  font-size: calc(10px + 2vmin); /* Utiliza un tamaño de fuente que se ajusta al tamaño de la ventana. */
+  color: white; /* Establece el color del texto a blanco. */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Estilos para el título principal. */
+h1 {
+  color: #222; /* Color del texto del título principal a gris oscuro. */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Estilos para el formulario. */
+form {
+  background: white; /* Fondo blanco para el formulario. */
+  padding: 20px; /* Espaciado interno alrededor del contenido del formulario. */
+  border-radius: 8px; /* Bordes redondeados para el formulario. */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad al formulario. */
+  margin-top: 20px; /* Margen superior para separar el formulario del título. */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Estilos comunes para todos los campos de entrada. */
+input {
+  margin: 10px; /* Margen alrededor de cada campo de entrada. */
+  padding: 10px; /* Espaciado interno dentro de cada campo de entrada. */
+  width: 200px; /* Ancho fijo para cada campo de entrada. */
+  border: 1px solid #ddd; /* Borde sutil para cada campo de entrada. */
+  border-radius: 4px; /* Bordes redondeados para los campos de entrada. */
 }
 
-.App-link {
-  color: #61dafb;
+/* Estilos para el botón de envío. */
+button {
+  cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón. */
+  background-color: #007bff; /* Color de fondo del botón. */
+  color: white; /* Color del texto del botón. */
+  border: none; /* Sin borde para el botón. */
+  padding: 10px 20px; /* Espaciado interno del botón. */
+  margin: 10px; /* Margen alrededor del botón. */
+  border-radius: 4px; /* Bordes redondeados para el botón. */
+  font-size: 16px; /* Tamaño del texto del botón. */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilos para el botón de envío al pasar el ratón sobre él. */
+button:hover {
+  background-color: #0056b3; /* Oscurece el color de fondo del botón al pasar el ratón sobre él. */
+}
+
+/* Estilos para el subtítulo de los resultados. */
+h2 {
+  color: #222; /* Establece el color de los títulos de resultados a gris oscuro. */
+}
+
+/* Estilos para la lista de resultados. */
+ul {
+  list-style-type: none; /* Elimina los marcadores de lista. */
+  padding: 0; /* Elimina el espacio interno de la lista. */
+}
+
+/* Estilos para cada elemento de la lista de resultados. */
+ul li {
+  color: #222; /* Color del texto para cada elemento de la lista a gris oscuro. */
+  background-color: #fff; /* Fondo blanco para cada elemento de la lista. */
+  padding: 10px; /* Espaciado interno para cada elemento de la lista. */
+  margin: 10px 0; /* Margen superior e inferior para cada elemento de la lista. */
+  border: 1px solid #ddd; /* Borde sutil para delimitar cada elemento de la lista. */
+  border-radius: 5px; /* Bordes redondeados para cada elemento de la lista. */
 }
