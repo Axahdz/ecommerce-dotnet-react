@@ -46,3 +46,9 @@ The backend is structured using a layered approach:
 
 1. Navigate to the frontend folder
 2. Install dependencies:
+3. Run the application:
+
+
+## Author
+
+Javier Axayácatl Melchor Hernández
